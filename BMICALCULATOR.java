@@ -1,7 +1,5 @@
 package com.example.calculator;
-
 import java.util.Scanner;
-
 public class BMICALCULATOR {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -32,8 +30,12 @@ public class BMICALCULATOR {
             return "Normal weight";
         } else if (bmi >= 25 && bmi < 29.9) {
             return "Overweight";
+        } else if (bmi >= 30 && bmi < 34.9) {
+            return "Obese Class I (Moderate)";
+        } else if (bmi >= 35 && bmi < 39.9) {
+            return "Obese Class II (Severe)";
         } else {
-            return "Obese";
+            return "Obese Class III (Very Severe)";
         }
     }
 }
